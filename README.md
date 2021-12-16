@@ -10,7 +10,12 @@ cmd창
 
     pip install -r requirements.txt
 
-## 3. 프로그램 실행
+## 3. comport 설정
+
+    ser1 = serial.Serial('COM4', 115200)
+    ser2 = serial.Serial('COM5', 115200)
+
+## 4. 프로그램 실행
 
 cmd창
 
