@@ -12,6 +12,8 @@ cmd창
 
 ## 3. comport 설정
 
+main.py
+
     ser1 = serial.Serial('COM4', 115200)
     ser2 = serial.Serial('COM5', 115200)
 
