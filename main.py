@@ -76,5 +76,6 @@ while True:
         ser1.write(bytes('setprop sys.usb.config adb\n', 'utf-8'))
         time.sleep(2)
         os.system('adb pull /data/log.txt {}'.format(file_name_full_adb))
-
+        time.sleep(3)
+        ser1.write(bytes('input tap 400 240\n', 'utf-8'))
         ser1.write(bytes('logcat > /data/log.txt\n', 'utf-8'))
